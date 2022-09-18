@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600&display=swap");
+body {
+  /* CSS HEX */
+  --clr-primary: hsl(200, 100%, 35%);
+  --clr-primary-light: hsl(199, 96%, 85%);
+  --clr-black: hsl(240, 27%, 2%);
+  --clr-bg: hsl(200, 47%, 85%);
+  --font-family: "Readex Pro", sans-serif;
+}
+
+.header-shadow {
+  box-shadow: 0 6px var(--clr-bg), 0 16px var(--clr-primary);
+}
+
+.input-box {
+  width: 100%;
+  max-width: 700px;
+}
+
+/*# sourceMappingURL=style.css.map */
