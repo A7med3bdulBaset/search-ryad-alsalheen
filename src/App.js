@@ -3,7 +3,7 @@ import InputBox from "./components/InputBox";
 import Results from "./components/Results";
 
 function App() {
-  const [value, setValue] = useState("من حسن إسلام المرء")
+  const [value, setValue] = useState('')
   const [data, setData] = useState([])
 
   useEffect(() => {
