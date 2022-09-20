@@ -4,7 +4,6 @@ import Hadith from "./Hadith";
 export default function Results({ data }) {
 	return (
 		<div className="container p-y-1">
-			<h1 className="bg-indigo clr-white">Results</h1>
 			<div className="grid-3 gap results">
 				{data &&
 					data.map((item) => (
