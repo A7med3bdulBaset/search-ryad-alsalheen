@@ -5,23 +5,29 @@ import Results from "./components/Results";
 function App() {
   const [value, setValue] = useState('')
   const [data, setData] = useState([])
-  const [isPending, startTransition] = useTransition()
+	const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
-    fetch(`https://ahadith-api.herokuapp.com/api/search/ahadith/${value}/ar-notashkeel`)
-    .then(response => response.json())
-    .then(data => { 
-      startTransition(() => {
-        setData(data) 
-      })
-    })
+    startTransition(() => {
+			fetch(
+				`https://ahadith-api.herokuapp.com/api/search/ahadith/${value}/ar-notashkeel`
+			)
+				.then((response) => response.json())
+				.then((data) => {
+					setData(data);
+				});
+		});
   }, [value])
 
-  document.title = "البحث عن: " + value
+  function handleSearch(e) {
+    setValue(e);
+    document.title = `البحث عن "${value}" في كتاب رياض الصالحين`
+  }
+
 
   return (
     <div>
-      <InputBox value={value} setValue={(para) => setValue(para)}/>
+      <InputBox value={value} setValue={(e) => handleSearch(e)}/>
       <Results data={data.Chapter} />
     </div>
   );

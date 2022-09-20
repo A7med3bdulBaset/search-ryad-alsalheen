@@ -1,7 +1,8 @@
-import React, {memo} from "react";
+import React, { memo } from "react";
 import Hadith from "./Hadith";
 
 function Results({ data }) {
+
 	return (
 		<div className="container p-y-1">
 			<div className="grid-3 gap results">
