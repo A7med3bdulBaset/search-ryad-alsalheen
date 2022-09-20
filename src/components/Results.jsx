@@ -1,7 +1,7 @@
-import React from "react";
+import React, {memo} from "react";
 import Hadith from "./Hadith";
 
-export default function Results({ data }) {
+function Results({ data }) {
 	return (
 		<div className="container p-y-1">
 			<div className="grid-3 gap results">
@@ -21,3 +21,4 @@ export default function Results({ data }) {
 	);
 }
 
+export default memo(Results);
