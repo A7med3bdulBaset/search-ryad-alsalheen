@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/search-ryad-alsalheen/static/css/main.30389ffd.css",
+    "main.js": "/search-ryad-alsalheen/static/js/main.cdadb212.js",
+    "index.html": "/search-ryad-alsalheen/index.html",
+    "main.30389ffd.css.map": "/search-ryad-alsalheen/static/css/main.30389ffd.css.map",
+    "main.cdadb212.js.map": "/search-ryad-alsalheen/static/js/main.cdadb212.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30389ffd.css",
+    "static/js/main.cdadb212.js"
+  ]
+}
