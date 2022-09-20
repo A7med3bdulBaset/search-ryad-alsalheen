@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useTransition } from "react"
 import InputBox from "./components/InputBox";
 import Results from "./components/Results";
 
 function App() {
   const [value, setValue] = useState('')
   const [data, setData] = useState([])
+  const [isPending, startTransition] = useTransition()
 
   useEffect(() => {
     fetch(`https://ahadith-api.herokuapp.com/api/search/ahadith/${value}/ar-notashkeel`)
     .then(response => response.json())
-    .then(data => setData(data))
+    .then(data => { 
+      startTransition(() => {
+        setData(data) 
+      })
+    })
   }, [value])
 
   document.title = "البحث عن: " + value
