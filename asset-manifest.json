@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/search-ryad-alsalheen/static/css/main.30389ffd.css",
-    "main.js": "/search-ryad-alsalheen/static/js/main.cdadb212.js",
+    "main.js": "/search-ryad-alsalheen/static/js/main.4d663012.js",
     "index.html": "/search-ryad-alsalheen/index.html",
     "main.30389ffd.css.map": "/search-ryad-alsalheen/static/css/main.30389ffd.css.map",
-    "main.cdadb212.js.map": "/search-ryad-alsalheen/static/js/main.cdadb212.js.map"
+    "main.4d663012.js.map": "/search-ryad-alsalheen/static/js/main.4d663012.js.map"
   },
   "entrypoints": [
     "static/css/main.30389ffd.css",
-    "static/js/main.cdadb212.js"
+    "static/js/main.4d663012.js"
   ]
 }
